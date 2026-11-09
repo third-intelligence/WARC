@@ -1,0 +1,369 @@
+{
+  "schema": 1,
+  "created_utc": "2026-09-14T05:49:24.744714+00:00",
+  "source_url": "https://three.arcprize.org/api/games",
+  "games": [
+    {
+      "game_id": "ar25-0c556536",
+      "baseline_actions": [
+        32,
+        50,
+        75,
+        37,
+        89,
+        159,
+        233,
+        73
+      ],
+      "source_sha256": "b965d2faaa4a4d9119c20eb51af0fb2b657fb52fb9884919863a48f2230c4272",
+      "metadata_sha256": "21c75ae6b97d940a237ac2dc42cf09db6fa18940e0e7044628dfe4a8db02fe22"
+    },
+    {
+      "game_id": "bp35-0a0ad940",
+      "baseline_actions": [
+        21,
+        48,
+        44,
+        38,
+        33,
+        87,
+        86,
+        131,
+        163
+      ],
+      "source_sha256": "e9aecb52c629c3e742276c2db04b81f91555051d8617b6cbc58bac410824867f",
+      "metadata_sha256": "e3e45847d50e453416b3c0213ef89d423312b68eb5ab2b73423abea9f5fe5643"
+    },
+    {
+      "game_id": "cd82-fb555c5d",
+      "baseline_actions": [
+        55,
+        8,
+        41,
+        21,
+        23,
+        23
+      ],
+      "source_sha256": "dafeabff60a3a99b5c93629f8da0d8f555b873ef16a522247d6197b1b3addbcb",
+      "metadata_sha256": "dbace9c3e690b823dfbd08be1f6735c46b9b6371c971168ba4efbdf89120ff0e"
+    },
+    {
+      "game_id": "cn04-2fe56bfb",
+      "baseline_actions": [
+        29,
+        54,
+        85,
+        300,
+        208,
+        113
+      ],
+      "source_sha256": "29977e145a0374b5842d360507f045029c3f4b22373612152e713c14691e01dc",
+      "metadata_sha256": "e89234ff609b2989ae16359bdaa244bf5268c7e9c48c9b2de553662f912bb706"
+    },
+    {
+      "game_id": "dc22-fdcac232",
+      "baseline_actions": [
+        59,
+        102,
+        67,
+        98,
+        324,
+        578
+      ],
+      "source_sha256": "74abe3523bd6bc8a0948991caa0ca71855e38542ba2123653a03485e064f252e",
+      "metadata_sha256": "1491b52154887a685a2c87cec86299258ddca66b60b0513ae044608c2b984181"
+    },
+    {
+      "game_id": "ft09-0d8bbf25",
+      "baseline_actions": [
+        43,
+        12,
+        23,
+        28,
+        65,
+        37
+      ],
+      "source_sha256": "aa5b54f48a29da9f276c3df0dc04de728002f523384ab868c85d56d819cd0783",
+      "metadata_sha256": "54118e7f3cba3f3a311688cd5b554de43a9882bd450861df24d65f18ff1c55c0"
+    },
+    {
+      "game_id": "g50t-5849a774",
+      "baseline_actions": [
+        78,
+        175,
+        179,
+        230,
+        96,
+        54,
+        67
+      ],
+      "source_sha256": "6f21f2065744e484ac38534f940158034e69f39add3b10a3d9fd258de7293aa9",
+      "metadata_sha256": "317fc6ff2254959aa2c6366c3628c27a603237df45ebd1c7df29443c39b7d73f"
+    },
+    {
+      "game_id": "ka59-38d34dbb",
+      "baseline_actions": [
+        28,
+        109,
+        51,
+        51,
+        33,
+        132,
+        326
+      ],
+      "source_sha256": "3e8341f4c317ceb9992ca54e8ad453ee4e8a04547b27a907f4a560a9a30d857e",
+      "metadata_sha256": "03bb4cb9a572e91febb9019fa13c1c3559820d27222f1f6bac98febbbe2b52ac"
+    },
+    {
+      "game_id": "lf52-271a04aa",
+      "baseline_actions": [
+        32,
+        81,
+        60,
+        71,
+        205,
+        148,
+        244,
+        109,
+        164,
+        225
+      ],
+      "source_sha256": "a6b01973a0905a447f6b92d77745719ebb001f9f94ff5bb0076200ef16839030",
+      "metadata_sha256": "35cdbe2aeb36bd740b888b38b6c339243ca00571be60a3520373cd723f43135f"
+    },
+    {
+      "game_id": "lp85-305b61c3",
+      "baseline_actions": [
+        17,
+        38,
+        31,
+        16,
+        41,
+        60,
+        26,
+        159
+      ],
+      "source_sha256": "7d10baec7dd29d07e574bd47ee1ec7912542a72632077a5446798221f41c4ae9",
+      "metadata_sha256": "dc5da31db72d1e7a73d9219279bc0bcda879e35c12967179ad3c9582cb1e6d58"
+    },
+    {
+      "game_id": "ls20-9607627b",
+      "baseline_actions": [
+        22,
+        123,
+        73,
+        84,
+        96,
+        192,
+        186
+      ],
+      "source_sha256": "298c810da2850d557c95d92a2cbd846df29a45d7134e20888617bedf5dafcd92",
+      "metadata_sha256": "1d46afd5b20991bd8765bff299c6342fad49aafb09a7206e7eba1149ae045560"
+    },
+    {
+      "game_id": "m0r0-492f87ba",
+      "baseline_actions": [
+        30,
+        111,
+        203,
+        26,
+        500,
+        237
+      ],
+      "source_sha256": "fc3954236f712759c2a5baaada09bb3244e217e022086dc9ec8f6e6fe101d797",
+      "metadata_sha256": "576bbd68561bda93f8c7bdfb35f794c0c522462290ea194b550403de3602f28f"
+    },
+    {
+      "game_id": "r11l-495a7899",
+      "baseline_actions": [
+        22,
+        33,
+        51,
+        26,
+        52,
+        49
+      ],
+      "source_sha256": "95d58ebaa8c758e905821bb4f5881d47166c8f5aec158bfea7585902c01040d0",
+      "metadata_sha256": "b7638b30298df7ef5a904b36cda0498718cda4f9a7cf1ed8269d21e400ba31a1"
+    },
+    {
+      "game_id": "re86-8af5384d",
+      "baseline_actions": [
+        26,
+        42,
+        86,
+        108,
+        189,
+        139,
+        424,
+        241
+      ],
+      "source_sha256": "cf3c1520e17f0b70e7a3cea0e680601a591befce306b4dd1926c735a7d3b65e8",
+      "metadata_sha256": "bf81d105f8f04425ea219cb54aedb88ed720cca2fc948f1344e7fb00ed8ecae5"
+    },
+    {
+      "game_id": "s5i5-18d95033",
+      "baseline_actions": [
+        20,
+        89,
+        106,
+        54,
+        162,
+        38,
+        86,
+        83
+      ],
+      "source_sha256": "341f85bac1fb5ca7a3315a367405c3c993a57ce4dd0ff01cc8aaa72bf6c6ed34",
+      "metadata_sha256": "979ada56aab4b879e60c8310154222200a026692d03297126c494cce373c4c7a"
+    },
+    {
+      "game_id": "sb26-7fbdac44",
+      "baseline_actions": [
+        18,
+        28,
+        18,
+        19,
+        31,
+        23,
+        58,
+        18
+      ],
+      "source_sha256": "dbb4877853a8d30f84e28d26f4a3d6ad7d2d1018602e82ccb5a62284043984f3",
+      "metadata_sha256": "31ba6492c570ea6a3675fa81c615b4ba7270282fb91e487f5f5147399084c9f9"
+    },
+    {
+      "game_id": "sc25-635fd71a",
+      "baseline_actions": [
+        36,
+        6,
+        32,
+        83,
+        143,
+        50
+      ],
+      "source_sha256": "871a507cf340d1e4a3271205a71bb5433f20c2b0e427f7ce40da47060cdd4392",
+      "metadata_sha256": "fb52ce328a4e4d0527ce24dc7ba19230c364c2c2136e2f46949b7a049a249b67"
+    },
+    {
+      "game_id": "sk48-d8078629",
+      "baseline_actions": [
+        61,
+        177,
+        101,
+        103,
+        230,
+        181,
+        125,
+        92
+      ],
+      "source_sha256": "b6ca05eed7ba81fe5a6a26c58410fa7daddf2039d3d1c42f600aaf9f6f0111e3",
+      "metadata_sha256": "2a19afd9ac1f37a1bffb1dd1d217a01be735a850fa23babc83f9ebc56a22169c"
+    },
+    {
+      "game_id": "sp80-589a99af",
+      "baseline_actions": [
+        39,
+        58,
+        25,
+        148,
+        96,
+        152
+      ],
+      "source_sha256": "2306d62311a3cc027250217d86cb4e012898edc7647a7c291ade23f36c9b9715",
+      "metadata_sha256": "90a727bcd03bcb796ae58caae8d1cdebc867b60148060b27463aba37ccb822ab"
+    },
+    {
+      "game_id": "su15-1944f8ab",
+      "baseline_actions": [
+        22,
+        42,
+        26,
+        115,
+        36,
+        31,
+        8,
+        40,
+        41
+      ],
+      "source_sha256": "a5f91f7c963d6ca6447dae0ab21342b48a3f511601c40dfa8e972bdc59b4651e",
+      "metadata_sha256": "16633a5a304017a7fbf69fa6e485efac48c308a8a7b6f4b37289476c03a92d8b"
+    },
+    {
+      "game_id": "tn36-ef4dde99",
+      "baseline_actions": [
+        32,
+        72,
+        26,
+        40,
+        30,
+        55,
+        62
+      ],
+      "source_sha256": "43c30052cdeb230017eb1ec23877050d96297756b86071417868ec61138c9fb7",
+      "metadata_sha256": "6004753ebe51bcce78495d0f6b459d01e7176adc25bbca75dbeeb91f3257530d"
+    },
+    {
+      "game_id": "tr87-cd924810",
+      "baseline_actions": [
+        54,
+        58,
+        40,
+        45,
+        71,
+        146
+      ],
+      "source_sha256": "3274657a6499af5c7a52390d58a5c5441497ed70b84388e418fdfa6c9601e305",
+      "metadata_sha256": "171067acc938fac00fbdad12de1a06e140e12d9a27300288fa8d5d1c7d4de810"
+    },
+    {
+      "game_id": "tu93-0768757b",
+      "baseline_actions": [
+        19,
+        16,
+        34,
+        42,
+        123,
+        80,
+        14,
+        23,
+        111
+      ],
+      "source_sha256": "80e41888f9f7b1a0c03e02c0aff3814e0fd68eb5b35ef22bb3649c87fc60a23f",
+      "metadata_sha256": "f5a1718c054a8656a6bc9255e90ac68492f318a09e92119d2dfc5cbf6d73ee15"
+    },
+    {
+      "game_id": "vc33-5430563c",
+      "baseline_actions": [
+        7,
+        18,
+        44,
+        61,
+        131,
+        34,
+        152
+      ],
+      "source_sha256": "8afa9f55054b2a2460b6c44ec5c66e120f6d6f4c2289e24d50832a68d1e3fcfd",
+      "metadata_sha256": "81c7e2512883298bfa4530341f7e8e6f9e535a4e547491437210351c465448c8"
+    },
+    {
+      "game_id": "wa30-ee6fef47",
+      "baseline_actions": [
+        71,
+        119,
+        183,
+        98,
+        368,
+        68,
+        79,
+        442,
+        415
+      ],
+      "source_sha256": "0c8b63caee2d092d6c0750fd74e417de682d09973b549046394dadf0437b1477",
+      "metadata_sha256": "f957c1775e5e0531784d27cbb4d266ef447932aab1a0c4fee2c5d5db7bae09bd"
+    }
+  ],
+  "sdk": {
+    "arc-agi": "0.9.9",
+    "arcengine": "0.9.3"
+  }
+}

@@ -1,0 +1,17 @@
+# Python packages for pretraining (warc/) and for the agent (agent/), pinned to the versions that trained the
+# released models and ran the agent (Python 3.12).
+#
+# Install torch first, with the wheel for your CUDA (torch 2.7.0 trained every model):
+#   pip install torch==2.7.0 torchvision==0.22.0 --index-url https://download.pytorch.org/whl/cu126
+# then: pip install -r requirements.txt
+numpy==2.5.3
+einops==0.8.2
+timm==1.0.12
+scipy==1.18.1
+matplotlib==3.11.2
+pillow==13.0.0
+requests==2.34.2
+# ARC-AGI-3 game engine (offline games), used by the agent runner
+arc-agi==0.9.9
+arcengine==0.9.3
+huggingface_hub>=0.30     # hf download (the weights)

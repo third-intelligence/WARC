@@ -1,0 +1,10 @@
+# Weights and recordings are downloaded into models/ and data/ (see README.md and data/README.md).
+/models/
+/data/ARC-AGI-3/
+/warc/runs/
+__pycache__/
+*.pyc
+/.venv/
+/agent/VARC/*/outputs/
+/runs/
+/data/pub25/
