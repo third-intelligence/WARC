@@ -1,5 +1,6 @@
 # How Many Exposures Does a World Model Need? Learning Unseen Game Mechanics at Test Time
 
+[![arXiv](https://img.shields.io/badge/arXiv-2611.12324-b31b1b.svg)](https://arxiv.org/abs/2611.12324)
 [![Model: Hugging Face](https://img.shields.io/badge/Model-%F0%9F%A4%97%20Hugging%20Face-yellow)](https://huggingface.co/third-intelligence/WARC)
 [![Kaggle: notebook](https://img.shields.io/badge/Kaggle-notebook-20BEFF?logo=kaggle)](https://www.kaggle.com/code/onodaku/warc-arc3-notebook-v2?scriptVersionId=362286067)
 [![License: CC0 1.0](https://img.shields.io/badge/License-CC0%201.0-lightgrey)](LICENSE)
@@ -186,12 +187,14 @@ docs/                             reproducibility, third-party notices, figures
 ## Citation
 
 ```bibtex
-@misc{warc2026,
-  title  = {How Many Exposures Does a World Model Need? Learning Unseen Game Mechanics at Test Time},
-  author = {Ku Onoda and Haruto Kawano and Shota Takashiro and Kohei Hayashi},
-  year   = {2026},
-  note   = {ARC Prize 2026 paper track},
-  url    = {https://github.com/third-intelligence/WARC},
+@misc{onoda2026exposures,
+  title         = {How Many Exposures Does a World Model Need? Learning Unseen Game Mechanics at Test Time},
+  author        = {Ku Onoda and Haruto Kawano and Shota Takashiro and Kohei Hayashi},
+  year          = {2026},
+  eprint        = {2611.12324},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.LG},
+  url           = {https://arxiv.org/abs/2611.12324},
 }
 ```
 
