@@ -39,7 +39,8 @@ its pretraining and test-time training code, and the explorer of our ARC Prize
 ## Release plan
 
 - [x] WARC: the model, the pretraining and test-time training code, the explorer, and the weights
-- [ ] MechEval: the annotations and the scorer
+- [x] MechEval: the labels of the paper's 279 recordings ([mecheval/README.md](mecheval/README.md))
+- [ ] MechEval: the annotator and the scorer
 
 ## Documentation
 
@@ -48,6 +49,7 @@ its pretraining and test-time training code, and the explorer of our ARC Prize
 | [docs/reproducibility.md](docs/reproducibility.md) | Rerun the Kaggle submission; retrain the fold models and the all-25 model; the pretraining and test-time training recipes; a CPU dry run. |
 | [warc/README.md](warc/README.md) | The pretraining scripts. |
 | [data/README.md](data/README.md) | The pretraining recordings and how to check them. |
+| [mecheval/README.md](mecheval/README.md) | The MechEval labels: their format, the measures, and how to read them. |
 | [docs/third_party.md](docs/third_party.md) | Third-party code in this repository and its licences. |
 
 ## Installation
@@ -181,6 +183,7 @@ agent/vendor/graph_exploration/   the training-free explorer of Rudakov et al. (
 warc/                             pretraining: train.py (fold models), train_all25.py
 models/                           weights (downloaded) and manifest.json with their SHA-256 and the fold split
 data/                             where the pretraining recordings go
+mecheval/                         MechEval labels of the 279 recordings, the recording list, the mechanic catalogue
 docs/                             reproducibility, third-party notices, figures
 ```
 

@@ -1,0 +1,58 @@
+{
+ "note": "The three folds of the paper over the 25 public ARC-AGI-3 games. A fold's model is pretrained on the human recordings of the other two folds and evaluated on its own games. MechEval scores 20 of the 25 games (mecheval_games).",
+ "folds": {
+  "1": [
+   "bp35",
+   "lf52",
+   "lp85",
+   "r11l",
+   "re86",
+   "sb26",
+   "sc25",
+   "su15",
+   "wa30"
+  ],
+  "2": [
+   "cd82",
+   "cn04",
+   "dc22",
+   "m0r0",
+   "sk48",
+   "tn36",
+   "tr87",
+   "tu93"
+  ],
+  "3": [
+   "ar25",
+   "ft09",
+   "g50t",
+   "ka59",
+   "ls20",
+   "s5i5",
+   "sp80",
+   "vc33"
+  ]
+ },
+ "mecheval_games": [
+  "ar25",
+  "cd82",
+  "dc22",
+  "ft09",
+  "ka59",
+  "lp85",
+  "ls20",
+  "m0r0",
+  "r11l",
+  "re86",
+  "s5i5",
+  "sb26",
+  "sc25",
+  "sk48",
+  "su15",
+  "tn36",
+  "tr87",
+  "tu93",
+  "vc33",
+  "wa30"
+ ]
+}

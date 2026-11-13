@@ -1,0 +1,610 @@
+[
+ {
+  "game": "ar25",
+  "mechanic": "mirror_with_shadow",
+  "kind": "direct key",
+  "in_paper": true,
+  "title": "Mirror axis and reflection move",
+  "description": "The selected mirror axis (a band) moves with the arrow keys, and the reflected image moves with it."
+ },
+ {
+  "game": "ar25",
+  "mechanic": "piece_with_shadow",
+  "kind": "direct key",
+  "in_paper": true,
+  "title": "Piece and reflection move",
+  "description": "The selected piece moves with the arrow keys; its reflection on the other side of the mirror moves, appears or disappears with it."
+ },
+ {
+  "game": "ar25",
+  "mechanic": "selection",
+  "kind": "linked",
+  "in_paper": true,
+  "title": "Selection highlight",
+  "description": "Selecting another piece or mirror axis moves the highlight from the old target to the new one."
+ },
+ {
+  "game": "ar25",
+  "mechanic": "step_bar",
+  "kind": "counter",
+  "in_paper": true,
+  "title": "Step bar (right edge)",
+  "description": "The bar of remaining steps shortens at each action."
+ },
+ {
+  "game": "cd82",
+  "mechanic": "container_tilt",
+  "kind": "direct key",
+  "in_paper": true,
+  "title": "Container tilts or moves",
+  "description": "An action changes the orientation or the position of the container (a bucket)."
+ },
+ {
+  "game": "cd82",
+  "mechanic": "energy_bar",
+  "kind": "counter",
+  "in_paper": true,
+  "title": "Step bar (bottom edge)",
+  "description": "The bar of remaining steps shortens at each action."
+ },
+ {
+  "game": "cd82",
+  "mechanic": "reservoir_recolor",
+  "kind": "direct click",
+  "in_paper": true,
+  "title": "Container colour",
+  "description": "Clicking a colour changes the colour inside the container (or the crane) to it."
+ },
+ {
+  "game": "cd82",
+  "mechanic": "selection_marker",
+  "kind": "linked",
+  "in_paper": true,
+  "title": "Colour selection marker",
+  "description": "The underline that marks the selected colour moves to the new selection."
+ },
+ {
+  "game": "cd82",
+  "mechanic": "stack_fill",
+  "kind": "direct key",
+  "in_paper": true,
+  "title": "Pour target fills",
+  "description": "Pouring from the container fills the target area with its colour."
+ },
+ {
+  "game": "dc22",
+  "mechanic": "bridge",
+  "kind": "direct click",
+  "in_paper": true,
+  "title": "Bridge rotates",
+  "description": "The red and pink pieces (the bridge) rotate about the dark centre."
+ },
+ {
+  "game": "dc22",
+  "mechanic": "budget_bar",
+  "kind": "counter",
+  "in_paper": true,
+  "title": "Step bar",
+  "description": "The bar of remaining steps shortens at each action."
+ },
+ {
+  "game": "dc22",
+  "mechanic": "color_tile_visibility",
+  "kind": "direct click",
+  "in_paper": true,
+  "title": "Course tiles switch",
+  "description": "Pressing the blue button switches the tiles on the course between a checkered and a plain blue pattern."
+ },
+ {
+  "game": "dc22",
+  "mechanic": "key_pickup",
+  "kind": "contact",
+  "in_paper": false,
+  "title": "Key pickup",
+  "description": "When the player reaches a key, the key leaves the board and the matching button appears in the right panel."
+ },
+ {
+  "game": "dc22",
+  "mechanic": "player",
+  "kind": "direct key",
+  "in_paper": true,
+  "title": "Player moves",
+  "description": "The player moves with the arrow keys."
+ },
+ {
+  "game": "dc22",
+  "mechanic": "switch_highlight",
+  "kind": "direct click",
+  "in_paper": false,
+  "title": "Switch frame cleared",
+  "description": "Pressing the blue button removes the frame around the switch in the right panel until a reset."
+ },
+ {
+  "game": "ft09",
+  "mechanic": "click_budget",
+  "kind": "counter",
+  "in_paper": true,
+  "title": "Click bar (bottom edge)",
+  "description": "The bar of remaining clicks on the bottom edge shortens at each action."
+ },
+ {
+  "game": "ft09",
+  "mechanic": "color_tile",
+  "kind": "direct click",
+  "in_paper": true,
+  "title": "Tile colour switches",
+  "description": "The clicked tile changes colour."
+ },
+ {
+  "game": "ka59",
+  "mechanic": "budget_bar",
+  "kind": "counter",
+  "in_paper": true,
+  "title": "Step bar (bottom edge)",
+  "description": "The bar of remaining steps shortens at each action."
+ },
+ {
+  "game": "ka59",
+  "mechanic": "edge_indicator",
+  "kind": "contact",
+  "in_paper": true,
+  "title": "Edge band",
+  "description": "When the player block touches a wall, a hole or another block, a thin white band appears on that side or leaves it."
+ },
+ {
+  "game": "ka59",
+  "mechanic": "player",
+  "kind": "direct key",
+  "in_paper": true,
+  "title": "Selected block moves",
+  "description": "The selected block (white centre) moves with the arrow keys. When it bumps into a block that slides on, that block's move is pushed_block."
+ },
+ {
+  "game": "ka59",
+  "mechanic": "player_center_selection",
+  "kind": "linked",
+  "in_paper": true,
+  "title": "Controlled block switches",
+  "description": "Switching the controlled block changes the centre colour of the old and the new block."
+ },
+ {
+  "game": "ka59",
+  "mechanic": "pushed_block",
+  "kind": "contact",
+  "in_paper": true,
+  "title": "Pushed block slides",
+  "description": "The selected block bumps into another block, which slides on while the selected one stays."
+ },
+ {
+  "game": "lp85",
+  "mechanic": "life_bar",
+  "kind": "counter",
+  "in_paper": true,
+  "title": "Step bar (left edge)",
+  "description": "The bar of remaining steps shortens at each action."
+ },
+ {
+  "game": "lp85",
+  "mechanic": "tiles_left",
+  "kind": "direct click",
+  "in_paper": true,
+  "title": "Tile row shifts left",
+  "description": "A click shifts a connected row of tiles by one place to the left (counter-clockwise on a ring)."
+ },
+ {
+  "game": "lp85",
+  "mechanic": "tiles_right",
+  "kind": "direct click",
+  "in_paper": true,
+  "title": "Tile row shifts right",
+  "description": "A click shifts a connected row of tiles by one place to the right (clockwise on a ring)."
+ },
+ {
+  "game": "ls20",
+  "mechanic": "piece_rotation",
+  "kind": "contact",
+  "in_paper": true,
+  "title": "Key rotates",
+  "description": "When the player steps on a rotation cell, the key piece in the corner rotates, on the board and in its HUD copy."
+ },
+ {
+  "game": "ls20",
+  "mechanic": "player",
+  "kind": "direct key",
+  "in_paper": true,
+  "title": "Player moves",
+  "description": "The 5 x 5 player block moves one tile (5 cells) with the arrow keys."
+ },
+ {
+  "game": "ls20",
+  "mechanic": "reset_to_start",
+  "kind": "linked",
+  "in_paper": false,
+  "title": "Return to start",
+  "description": "When the steps run out, the player returns to the start and the board is restored (refills and the HUD piece come back)."
+ },
+ {
+  "game": "ls20",
+  "mechanic": "step_refill",
+  "kind": "contact",
+  "in_paper": true,
+  "title": "Step refill",
+  "description": "Stepping on a refill item fills the step bar on the bottom edge; once the player leaves the cell, the item is gone."
+ },
+ {
+  "game": "ls20",
+  "mechanic": "steps_bar",
+  "kind": "counter",
+  "in_paper": true,
+  "title": "Step bar (bottom edge)",
+  "description": "The bar of remaining steps shortens at each action."
+ },
+ {
+  "game": "m0r0",
+  "mechanic": "life_bar",
+  "kind": "counter",
+  "in_paper": true,
+  "title": "Step bar (top edge)",
+  "description": "The bar of remaining steps shortens at each action."
+ },
+ {
+  "game": "m0r0",
+  "mechanic": "mirror_life_bar",
+  "kind": "counter",
+  "in_paper": true,
+  "title": "Mirrored step bar (bottom edge)",
+  "description": "The mirrored bar on the bottom edge shortens at each action."
+ },
+ {
+  "game": "m0r0",
+  "mechanic": "mirror_player",
+  "kind": "linked",
+  "in_paper": true,
+  "title": "Mirrored player moves",
+  "description": "Moving the player moves the mirrored player symmetrically."
+ },
+ {
+  "game": "m0r0",
+  "mechanic": "player",
+  "kind": "direct key",
+  "in_paper": true,
+  "title": "Player moves",
+  "description": "The directly controlled player moves with the arrow keys."
+ },
+ {
+  "game": "r11l",
+  "mechanic": "arm_selection",
+  "kind": "linked",
+  "in_paper": true,
+  "title": "Leg selection",
+  "description": "Switching the controlled leg changes the colours of the newly selected and the deselected leg."
+ },
+ {
+  "game": "r11l",
+  "mechanic": "budget_bar",
+  "kind": "counter",
+  "in_paper": true,
+  "title": "Step bar",
+  "description": "The bar of remaining steps shortens at each action."
+ },
+ {
+  "game": "r11l",
+  "mechanic": "goal_flash",
+  "kind": "contact",
+  "in_paper": false,
+  "title": "Goal frame",
+  "description": "When the body of the robot reaches a goal, a white 7 x 7 frame appears over the goal until the body leaves."
+ },
+ {
+  "game": "r11l",
+  "mechanic": "robot",
+  "kind": "direct click",
+  "in_paper": true,
+  "title": "Robot moves",
+  "description": "Clicking moves a leg, and the legs, the body and the string between them move together."
+ },
+ {
+  "game": "re86",
+  "mechanic": "budget_bar",
+  "kind": "counter",
+  "in_paper": true,
+  "title": "Step bar",
+  "description": "The bar of remaining steps shortens at each action."
+ },
+ {
+  "game": "re86",
+  "mechanic": "piece",
+  "kind": "direct key",
+  "in_paper": true,
+  "title": "Piece moves",
+  "description": "The selected piece moves with the arrow keys; its shape can change."
+ },
+ {
+  "game": "re86",
+  "mechanic": "piece_selection",
+  "kind": "linked",
+  "in_paper": true,
+  "title": "Piece selection",
+  "description": "Selecting another piece switches the selection marker."
+ },
+ {
+  "game": "s5i5",
+  "mechanic": "budget_bar",
+  "kind": "counter",
+  "in_paper": true,
+  "title": "Step bar",
+  "description": "The bar of remaining steps shortens at each action."
+ },
+ {
+  "game": "s5i5",
+  "mechanic": "extending_arm",
+  "kind": "direct click",
+  "in_paper": true,
+  "title": "Arm rotates and extends",
+  "description": "A click rotates the telescopic arm and extends or retracts it."
+ },
+ {
+  "game": "sb26",
+  "mechanic": "budget_bar",
+  "kind": "counter",
+  "in_paper": true,
+  "title": "Step bar",
+  "description": "The bar of remaining steps shortens at each action."
+ },
+ {
+  "game": "sb26",
+  "mechanic": "checkbox_selection",
+  "kind": "linked",
+  "in_paper": true,
+  "title": "Selection box",
+  "description": "The selection box (the cursor square) appears, moves or changes state."
+ },
+ {
+  "game": "sb26",
+  "mechanic": "tile",
+  "kind": "direct click",
+  "in_paper": true,
+  "title": "Tile changes",
+  "description": "The clicked tile changes its appearance or colour, including moving into a slot."
+ },
+ {
+  "game": "sc25",
+  "mechanic": "budget_bar",
+  "kind": "counter",
+  "in_paper": true,
+  "title": "Step bar",
+  "description": "The bar of remaining steps shortens at each action."
+ },
+ {
+  "game": "sc25",
+  "mechanic": "player_movement",
+  "kind": "direct key",
+  "in_paper": true,
+  "title": "Player moves",
+  "description": "The player moves with the arrow keys. The position correction that comes with a size change is player_resize."
+ },
+ {
+  "game": "sc25",
+  "mechanic": "player_resize",
+  "kind": "direct click",
+  "in_paper": false,
+  "title": "Player grows or shrinks",
+  "description": "Casting a spell enlarges or shrinks the player."
+ },
+ {
+  "game": "sc25",
+  "mechanic": "spell_slot_grid",
+  "kind": "direct click",
+  "in_paper": true,
+  "title": "Spell slots",
+  "description": "The grid of spell slots changes."
+ },
+ {
+  "game": "sk48",
+  "mechanic": "budget_bar",
+  "kind": "counter",
+  "in_paper": true,
+  "title": "Step bar",
+  "description": "The bar of remaining steps shortens at each action."
+ },
+ {
+  "game": "sk48",
+  "mechanic": "color_block",
+  "kind": "contact",
+  "in_paper": true,
+  "title": "Colour blocks pushed",
+  "description": "Pushed by the skewer, the colour blocks move, stretch or change shape."
+ },
+ {
+  "game": "sk48",
+  "mechanic": "match_indicator",
+  "kind": "linked",
+  "in_paper": true,
+  "title": "Match indicator",
+  "description": "The indicator that shows whether the blocks match the target switches."
+ },
+ {
+  "game": "sk48",
+  "mechanic": "skewer_extend",
+  "kind": "direct key",
+  "in_paper": true,
+  "title": "Skewer extends",
+  "description": "The shaft of the controlled skewer extends or retracts; its head stays."
+ },
+ {
+  "game": "sk48",
+  "mechanic": "skewer_move",
+  "kind": "direct key",
+  "in_paper": true,
+  "title": "Skewer moves",
+  "description": "The controlled skewer moves up or down with its head and pushes the colour blocks ahead of it."
+ },
+ {
+  "game": "su15",
+  "mechanic": "block_merge",
+  "kind": "direct click",
+  "in_paper": true,
+  "title": "Fruits merge",
+  "description": "A click draws smaller fruits into a larger one, and they become one (the movement in that step included)."
+ },
+ {
+  "game": "su15",
+  "mechanic": "block_move",
+  "kind": "direct click",
+  "in_paper": true,
+  "title": "Fruits move",
+  "description": "A click moves fruits without changing their number."
+ },
+ {
+  "game": "su15",
+  "mechanic": "budget_bar",
+  "kind": "counter",
+  "in_paper": true,
+  "title": "Step bar",
+  "description": "The bar of remaining steps shortens at each action."
+ },
+ {
+  "game": "tn36",
+  "mechanic": "budget_bar",
+  "kind": "counter",
+  "in_paper": true,
+  "title": "Step bar",
+  "description": "The bar of remaining steps shortens at each action."
+ },
+ {
+  "game": "tn36",
+  "mechanic": "instruction_button",
+  "kind": "direct click",
+  "in_paper": true,
+  "title": "Instruction button",
+  "description": "The clicked instruction button switches its state."
+ },
+ {
+  "game": "tn36",
+  "mechanic": "reference",
+  "kind": "direct click",
+  "in_paper": true,
+  "title": "Reference display",
+  "description": "In level 2, selecting a program changes the reference pose (the example display), which then stays."
+ },
+ {
+  "game": "tn36",
+  "mechanic": "selector_button",
+  "kind": "direct click",
+  "in_paper": false,
+  "title": "Program selector",
+  "description": "The clicked program selection button switches its state."
+ },
+ {
+  "game": "tr87",
+  "mechanic": "bottom_timer_bar",
+  "kind": "counter",
+  "in_paper": true,
+  "title": "Step bar (bottom edge)",
+  "description": "The bar of remaining steps shortens at each action."
+ },
+ {
+  "game": "tr87",
+  "mechanic": "selector_bracket_pair",
+  "kind": "linked",
+  "in_paper": true,
+  "title": "Selection brackets",
+  "description": "The upper and the lower selection bracket move together."
+ },
+ {
+  "game": "tr87",
+  "mechanic": "slot1_glyph_cycle",
+  "kind": "direct key",
+  "in_paper": true,
+  "title": "Slot symbol",
+  "description": "The symbol in the selected slot is replaced in place by another."
+ },
+ {
+  "game": "tu93",
+  "mechanic": "bottom_energy_bar",
+  "kind": "counter",
+  "in_paper": true,
+  "title": "Step bar (bottom edge)",
+  "description": "The bar of remaining steps shortens at each action."
+ },
+ {
+  "game": "tu93",
+  "mechanic": "enemy_ball",
+  "kind": "autonomous",
+  "in_paper": false,
+  "title": "Enemy ball",
+  "description": "The enemy ball moves on its own; the dots on its face change colour, or it bursts."
+ },
+ {
+  "game": "tu93",
+  "mechanic": "player_block_on_path",
+  "kind": "direct key",
+  "in_paper": true,
+  "title": "Player moves",
+  "description": "The player block on the path moves and turns with the arrow keys."
+ },
+ {
+  "game": "vc33",
+  "mechanic": "boat",
+  "kind": "direct click",
+  "in_paper": true,
+  "title": "Boat moves",
+  "description": "A click moves a boat-shaped part with a coloured block."
+ },
+ {
+  "game": "vc33",
+  "mechanic": "top_timer_bar",
+  "kind": "counter",
+  "in_paper": true,
+  "title": "Step bar (top edge)",
+  "description": "The bar on the top edge shortens at each action; it can also refill."
+ },
+ {
+  "game": "vc33",
+  "mechanic": "waves",
+  "kind": "direct click",
+  "in_paper": true,
+  "title": "Waves",
+  "description": "A click moves the edge of a white area, which widens or narrows."
+ },
+ {
+  "game": "wa30",
+  "mechanic": "bottom_timer_bar",
+  "kind": "counter",
+  "in_paper": true,
+  "title": "Step bar (bottom edge)",
+  "description": "The bar of remaining steps shortens at each action."
+ },
+ {
+  "game": "wa30",
+  "mechanic": "moving_green_block",
+  "kind": "direct key",
+  "in_paper": true,
+  "title": "Controlled block moves",
+  "description": "The green block moves and turns with the arrow keys and carries a grabbed object with it."
+ },
+ {
+  "game": "wa30",
+  "mechanic": "orange_agent",
+  "kind": "autonomous",
+  "in_paper": true,
+  "title": "Orange agent moves",
+  "description": "The orange agent moves."
+ },
+ {
+  "game": "wa30",
+  "mechanic": "target_facing",
+  "kind": "contact",
+  "in_paper": true,
+  "title": "Facing frame",
+  "description": "When the controlled block faces an adjacent object, a grey frame appears on the object; it goes when the block leaves."
+ },
+ {
+  "game": "wa30",
+  "mechanic": "target_grab",
+  "kind": "linked",
+  "in_paper": true,
+  "title": "Grab frame",
+  "description": "Grabbing the adjacent object changes its frame to the grabbed colour (white for the selector, black for other agents); releasing restores it."
+ }
+]
