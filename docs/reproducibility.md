@@ -35,9 +35,9 @@ explorer files against the hashes in `warc_agents/graph.py` before a run.
 ### Data
 
 The models are trained on the human gameplay recordings of the 25 public ARC-AGI-3 games (340 recordings; see
-`data/README.md` for where to get them and how to check them). The data root must contain
-`data/training/<game>/<id>.recording.jsonl` and `data/evaluation/<game>/<id>.recording.jsonl` with the file names
-listed in `data/SHA256SUMS`: the file names decide which recording of each game is the validation recording.
+`data/README.md` for where to get them and how to check them). The data root, `data/ARC-AGI-3`
+after those steps, must contain `data/training/<game>/<id>.recording.jsonl` with the file names listed in
+`data/SHA256SUMS`: the file names decide which recording of each game is the validation recording.
 
 ### Environment
 
