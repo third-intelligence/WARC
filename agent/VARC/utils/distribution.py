@@ -1,3 +1,5 @@
+# From utils/distribution.py of the VARC code (https://github.com/lillian039/VARC), reformatted and without comments;
+# MIT License, see incl_licenses/LICENSE_VARC.
 import os
 import argparse
 import torch

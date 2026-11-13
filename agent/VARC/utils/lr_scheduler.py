@@ -1,3 +1,7 @@
+# From utils/lr_scheduler.py of the VARC code (https://github.com/lillian039/VARC), reformatted and without comments;
+# MIT License, see incl_licenses/LICENSE_VARC. The schedule is based on the Hugging Face Transformers implementation
+# (https://github.com/huggingface/transformers/blob/v4.23.1/src/transformers/optimization.py#L104), Apache License 2.0,
+# see incl_licenses/LICENSE_transformers.
 import math
 import torch
 from torch.optim.lr_scheduler import LambdaLR

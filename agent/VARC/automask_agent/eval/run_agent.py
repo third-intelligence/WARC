@@ -27,7 +27,7 @@ def main() -> None:
     p = argparse.ArgumentParser(
         description='the agent of the submission: the graph explorer with WARC updated after every transition',
         epilog='Other options (--environments-dir DIR, --device DEVICE, --candidates N, --branch N, --epsilon E, '
-               '--update-steps N, --mode {full,l1}, --log-every N) are passed on to the explorer, graph_agent/eval/run_agent.py.')
+               '--mode {full,l1}, --log-every N) are passed on to the explorer, graph_agent/eval/run_agent.py.')
     p.add_argument('--arm', default='automask_strict_h2', choices=sorted(ARM_CONFIGS))
     p.add_argument('--ckpt', default='')
     p.add_argument('--game', default='')

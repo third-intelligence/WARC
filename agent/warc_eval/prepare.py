@@ -5,6 +5,8 @@ import json
 from datetime import datetime, timezone
 from pathlib import Path
 
+import warnings
+
 import requests
 
 PUB25 = set("ar25 bp35 cd82 cn04 dc22 ft09 g50t ka59 lf52 lp85 ls20 m0r0 r11l re86 s5i5 sb26 sc25 sk48 sp80 su15 tn36 tr87 tu93 vc33 wa30".split())
@@ -12,7 +14,8 @@ PUB25 = set("ar25 bp35 cd82 cn04 dc22 ft09 g50t ka59 lf52 lp85 ls20 m0r0 r11l re
 
 def prepare(destination):
     root = Path(destination).resolve()
-    root.mkdir(parents=True, exist_ok=False)
+    if root.exists():
+        raise FileExistsError(f"{root} exists; remove it or choose another destination")
     base = "https://three.arcprize.org"
     session = requests.Session()
     response = session.get(base + "/api/games/anonkey", timeout=30)
@@ -32,8 +35,9 @@ def prepare(destination):
         latest = response.json()["info"]["version"]
         installed = importlib.metadata.version(package)
         if installed != latest:
-            raise ValueError(f"Upgrade {package}: installed={installed}, latest={latest}")
+            warnings.warn(f"{package}: installed {installed} (requirements.txt), latest {latest} on PyPI")
         manifest["sdk"][package] = installed
+    root.mkdir(parents=True)
     for item in sorted(selected, key=lambda x: x["game_id"]):
         game_id = item["game_id"]
         stem, version = game_id.split("-", 1)

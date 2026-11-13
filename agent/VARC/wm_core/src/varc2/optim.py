@@ -1,3 +1,5 @@
+# zeropower_via_newtonschulz5 is taken from Muon by Keller Jordan (https://github.com/KellerJordan/Muon), MIT License;
+# see incl_licenses/LICENSE_Muon.
 from __future__ import annotations
 import math
 from typing import List, Tuple

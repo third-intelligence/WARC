@@ -18,8 +18,14 @@ against the environment files of the public games, which `agent/warc_eval/prepar
 the ARC Prize API; the README's quick start gives the commands. Each run writes `summary.json` (levels cleared, first
 clear step, action counts, update statistics) and `steps.json` (every action with the prediction and update records).
 
-The explorer alone, the Graph rows of the paper's closed-loop table, runs through the local runner, which also
-scores the runs and writes a leaderboard:
+`agent/play.py` runs the Graph + WARC row of the paper's closed-loop table (WARC-Agent). The paper ran each game with
+seeds 0 to 9 for 1,000 actions and reports L1@1000, L2@1000 and RHAE@1000 with equal weight per game. The Graph
+(no model), Graph + WARC (frozen) and true-next-frames rows use the same explorer through a separate runner, which is
+not part of this release.
+
+The graph explorer of Rudakov et al., vendored in `agent/vendor/graph_exploration/` (the "Graph exploration" row of
+the paper, a different implementation from the explorer above), runs through the local runner, which also scores the
+runs and writes a leaderboard:
 
 ```bash
 cd agent
@@ -59,7 +65,8 @@ CUDA_VISIBLE_DEVICES=0,1,2,3,4,5 PYTHONDONTWRITEBYTECODE=1 python -B -m torch.di
 ```
 
 All 25 games are training games; one recording per game (the last by file name among those that reach the game's
-top level) is the validation set, 314 training recordings and 25 validation recordings in all, 8,201,259 training
+top level) is the validation set, 314 training recordings and 25 validation recordings in all (one cn04 recording has no valid
+step and is dropped), 8,201,259 training
 examples per epoch. `checkpoint_best.pt` is the epoch with the best validation exact-frame accuracy: 80.0% at
 epoch 30 for the released model.
 

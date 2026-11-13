@@ -1,3 +1,4 @@
+# Adapted from utils/args.py of the VARC code (https://github.com/lillian039/VARC), MIT License; see incl_licenses/LICENSE_VARC.
 import argparse
 
 def resolve_global_batch_size(args, world_size: int, *, distributed: bool=False, rank: int=0) -> None:

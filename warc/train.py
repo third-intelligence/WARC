@@ -66,7 +66,7 @@ def split_args(argv, default_save=None):
             default_save = f'runs/fold{fold}'
         rest += ['--save-dir', str(HERE / default_save)]
     if '--data-root' not in rest and not ours['dry_run']:
-        raise SystemExit('--data-root <dir with data/training and data/evaluation> is required (see data/README.md)')
+        raise SystemExit('--data-root <dir with data/training/<game>/> is required (see data/README.md)')
     return ours, rest
 
 

@@ -1,3 +1,5 @@
+# Adapted from src/ARC_ViT.py of the VARC code (https://github.com/lillian039/VARC), MIT License, Copyright (c) 2025 Keya Hu.
+# The full text is in incl_licenses/LICENSE_VARC.
 from typing import Optional, Tuple
 from vit_vendor.vendor.pos_embed import VisionRotaryEmbeddingFast
 import torch

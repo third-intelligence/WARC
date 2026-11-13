@@ -1,3 +1,5 @@
+# zeropower_via_newtonschulz5 is taken from Muon by Keller Jordan (https://github.com/KellerJordan/Muon), MIT License;
+# see incl_licenses/LICENSE_Muon.
 """Muon, a copy of the training code's wm_core/src/varc2/optim.py (``torch.optim.Muon`` only exists in torch >= 2.9).
 
 The final TTT recipe (final_ttt.split_params) gives Muon the 2-D weights of the transformer blocks except the
