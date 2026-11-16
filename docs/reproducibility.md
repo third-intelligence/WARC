@@ -20,7 +20,7 @@ clear step, action counts, update statistics) and `steps.json` (every action wit
 
 `agent/play.py` runs the Graph + WARC row of the paper's closed-loop table (WARC-Agent). The paper ran each game with
 seeds 0 to 9 for 1,000 actions and reports L1@1000, L2@1000 and RHAE@1000 with equal weight per game. The Graph
-(no model), Graph + WARC (frozen) and true-next-frames rows use the same explorer through a separate runner, which is
+(no model), Graph + frozen WARC and Graph + oracle world model rows use the same explorer through a separate runner, which is
 not part of this release.
 
 The graph explorer of Rudakov et al., vendored in `agent/vendor/graph_exploration/` (the "Graph exploration" row of
