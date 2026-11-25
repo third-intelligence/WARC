@@ -1,0 +1,42 @@
+{
+ "dc22": {
+  "mapping": "dc22.tsv",
+  "variant": "v1"
+ },
+ "ka59": {
+  "mapping": "ka59.tsv",
+  "variant": "v1"
+ },
+ "r11l": {
+  "mapping": "r11l.tsv",
+  "variant": "v1"
+ },
+ "re86": {
+  "mapping": "re86.tsv",
+  "variant": "v1"
+ },
+ "s5i5": {
+  "mapping": "s5i5.tsv",
+  "variant": "v1"
+ },
+ "sb26": {
+  "mapping": "sb26.tsv",
+  "variant": "v1"
+ },
+ "sc25": {
+  "mapping": "sc25.tsv",
+  "variant": "v1"
+ },
+ "sk48": {
+  "mapping": "sk48.tsv",
+  "variant": "v1"
+ },
+ "su15": {
+  "mapping": "su15.tsv",
+  "variant": "v1"
+ },
+ "tn36": {
+  "mapping": "tn36.tsv",
+  "variant": "v1"
+ }
+}

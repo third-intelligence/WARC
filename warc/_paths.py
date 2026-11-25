@@ -1,6 +1,6 @@
 """sys.path for the training scripts: the VARC tree (data, trainer, backbone) and warc_model (the WARC model).
 
-Both live under agent, the code the Kaggle notebook runs, so the model that is trained
+Both live under agent/, the code of the agent, so the model that is trained
 here is the model that is loaded there."""
 from pathlib import Path
 import sys

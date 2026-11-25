@@ -1,6 +1,6 @@
-"""The explorer of the Kaggle notebook (the graph explorer with WARC), behind an act / observe protocol.
+"""The agent of the paper (the graph explorer with WARC), behind an act / observe protocol.
 
-The notebook's episode loop answers GAME_OVER with RESET without asking the agent and reports every executed
+The episode loop answers GAME_OVER with RESET without asking the agent and reports every executed
 operation, the RESET included. This adapter only translates:
   - observation dict -> the agent's obs: the last frame of `frame`, zero-padded or cropped to 64 x 64, int64;
     available = `available_actions`
@@ -80,7 +80,7 @@ class AgentPlayer:
         self.arm, self.predictor_kind = arm, predictor
         self.started = False
 
-    # the notebook's per-game summary reads these
+    # the per-game summary reads these
     @property
     def predictor(self):
         return self.agent.predictor

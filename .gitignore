@@ -8,3 +8,5 @@ __pycache__/
 /agent/VARC/*/outputs/
 /runs/
 /data/pub25/
+/mecheval_out/
+/mecheval_reproduce/

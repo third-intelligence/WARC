@@ -1,5 +1,5 @@
 # Python packages for pretraining (warc/) and for the agent (agent/), pinned to the versions that trained the
-# released models and ran the agent (Python 3.12).
+# models of the paper and ran the agent (Python 3.12).
 #
 # Install torch first, with the wheel for your CUDA (torch 2.7.0 trained every model):
 #   pip install torch==2.7.0 torchvision==0.22.0 --index-url https://download.pytorch.org/whl/cu126

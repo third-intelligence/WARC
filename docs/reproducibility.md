@@ -1,31 +1,32 @@
 # Reproducibility
 
-Two levels: rerun the Kaggle submission, or retrain the weights (13 to 20 hours per model on six GPUs).
+Two levels: run the agent, or retrain the weights (six GPUs).
 
-## 1. Rerun the submission
+## 1. Run the agent
 
-The submitted notebook and the dataset it reads are public on Kaggle:
-
-- notebook (Version 5): https://www.kaggle.com/code/onodaku/warc-arc3-notebook-v2?scriptVersionId=362286067
-- dataset: https://www.kaggle.com/datasets/onodaku/warc-arc-agi-3-solver
-
-The dataset holds the code of this repository's `agent/` as `src/`, the all-25 weights (`all25/checkpoint_best.pt`
-on Hugging Face), and the solver settings. To rerun it, copy the notebook on Kaggle with the dataset and the
-competition data attached, a GPU, and internet off.
-
-Locally, the same agent (explorer, world model and update recipe) plays one game at a time through `agent/play.py`
+The agent (explorer, world model and update recipe) plays one game at a time through `agent/play.py`
 against the environment files of the public games, which `agent/warc_eval/prepare.py` downloads from
-the ARC Prize API; the README's quick start gives the commands. Each run writes `summary.json` (levels cleared, first
-clear step, action counts, update statistics) and `steps.json` (every action with the prediction and update records).
+the ARC Prize API. It uses the fold model that holds the game out (`models/manifest.json` lists the folds; a fold
+model refuses the games it was pretrained on):
+
+```bash
+# once: download the 25 public games from the ARC Prize API into data/pub25/games
+python -c "import sys; sys.path.insert(0, 'agent'); from warc_eval.prepare import prepare; prepare('data/pub25')"
+python -B agent/play.py --game tr87 --ckpt models/fold2/checkpoint_best.pt \
+    --environments-dir data/pub25/games --budget 1000 --seed 0 --out-dir runs/tr87_s0
+```
+
+Each run writes `summary.json` (levels cleared, first clear step, action counts, update statistics) and `steps.json`
+(every action with the prediction and update records).
 
 `agent/play.py` runs the Graph + WARC row of the paper's closed-loop table (WARC-Agent). The paper ran each game with
 seeds 0 to 9 for 1,000 actions and reports L1@1000, L2@1000 and RHAE@1000 with equal weight per game. The Graph
 (no model), Graph + frozen WARC and Graph + oracle world model rows use the same explorer through a separate runner, which is
 not part of this release.
 
-The graph explorer of Rudakov et al., vendored in `agent/vendor/graph_exploration/` (the "Graph exploration" row of
-the paper, a different implementation from the explorer above), runs through the local runner, which also scores the
-runs and writes a leaderboard:
+The published graph explorer of Rudakov et al., which the explorer above simplifies in its own implementation, is
+vendored in `agent/vendor/graph_exploration/` for comparison; it does not enter the paper's tables. It runs through the
+local runner, which also scores the runs and writes a leaderboard:
 
 ```bash
 cd agent
@@ -47,7 +48,7 @@ after those steps, must contain `data/training/<game>/<id>.recording.jsonl` with
 
 ### Environment
 
-Python 3.12, torch 2.7.0 (every released model was trained with it), and `requirements.txt`:
+Python 3.12, torch 2.7.0 (every model of the paper was trained with it), and `requirements.txt`:
 
 ```bash
 python3.12 -m venv .venv && source .venv/bin/activate
@@ -55,7 +56,7 @@ pip install torch==2.7.0 torchvision==0.22.0 --index-url https://download.pytorc
 pip install -r requirements.txt
 ```
 
-### The submitted model (all 25 games)
+### The all-25 model (not used in the paper's evaluations)
 
 ```bash
 cd warc
@@ -68,7 +69,7 @@ All 25 games are training games; one recording per game (the last by file name a
 top level) is the validation set, 314 training recordings and 25 validation recordings in all (one cn04 recording has no valid
 step and is dropped), 8,201,259 training
 examples per epoch. `checkpoint_best.pt` is the epoch with the best validation exact-frame accuracy: 80.0% at
-epoch 30 for the released model.
+epoch 30.
 
 ### The fold models of the paper
 
@@ -94,7 +95,7 @@ Fold 2 trains on 225 recordings (5,555,175 examples per epoch) with 17 validatio
 
 | item | value |
 |---|---|
-| model | 10 pre-norm adaLN-Zero transformer blocks, width 512, 8 heads, RoPE, patch 2 on 64 x 64 frames; a learned vector added to the patch token of the clicked cell; 35.3M parameters (arch `unified_hist_cm`) |
+| model | 10 pre-norm adaLN-Zero transformer blocks, width 512, 8 heads, RoPE, patch 2 on 64 x 64 frames; a learned vector for the clicked cell, one per cell of the 2 x 2 patch, added to the patch token that holds it; 35.3M parameters (arch `unified_hist_cm`) |
 | input, target | the last 3 frames and the action; cross-entropy over the colours of the next frame |
 | optimizer | Muon on the 2-D weights of the blocks except the adaLN modulation (40 tensors), AdamW on the rest (72 tensors); lr 3e-4, weight decay 0, gradient clip 1 |
 | schedule | 30 epochs, 6 warmup epochs then cosine; epoch 1 runs at lr 0 |
@@ -103,8 +104,7 @@ Fold 2 trains on 225 recordings (5,555,175 examples per epoch) with 17 validatio
 | other | bf16 autocast, torch.compile (reduce-overhead), seed 42, best checkpoint by validation exact-frame accuracy |
 
 Six GPUs are part of the recipe: with 4 GPUs (`--nproc_per_node=4`, 4 x 129) the global batches are the same, but the
-per-rank loss averaging and the dropout streams differ. Eight GPUs do not divide 516. On six RTX PRO 6000 Blackwell
-Max-Q GPUs an epoch took 27 to 39 minutes plus evaluation, 13 to 20 hours per model. To continue an interrupted run,
+per-rank loss averaging and the dropout streams differ. Eight GPUs do not divide 516. To continue an interrupted run,
 add `--resume-checkpoint <save-dir>/checkpoint_last.pt`. `provenance.json` in the save directory records the command
 and the SHA-256 of the code that ran.
 

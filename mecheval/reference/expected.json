@@ -1,0 +1,22 @@
+{
+ "note": "Test-time seed 0. Frozen WARC does not update; its LCA@10, LCA@100, n.r. and FE equal the paper's main table. The main table averages three test-time seeds for WARC. Values are rounded as in the paper.",
+ "tau": 0.7,
+ "rows": {
+  "warc": {
+   "k0": 3.3,
+   "lca@10": 53.3,
+   "lca@100": 73.7,
+   "reached@100": 62.3,
+   "nr": 31.9,
+   "fe": 0.11
+  },
+  "warc_frozen": {
+   "k0": 1.8,
+   "lca@10": 17.5,
+   "lca@100": 18.4,
+   "reached@100": 2.9,
+   "nr": 95.7,
+   "fe": 0.11
+  }
+ }
+}

@@ -25,7 +25,7 @@ def main() -> None:
     from warc_model.final_ttt import FinalPredictor
     from warc_model.player import injected_predictor
     p = argparse.ArgumentParser(
-        description='the agent of the submission: the graph explorer with WARC updated after every transition',
+        description='the agent of the paper: the graph explorer with WARC updated after every transition',
         epilog='Other options (--environments-dir DIR, --device DEVICE, --candidates N, --branch N, --epsilon E, '
                '--mode {full,l1}, --log-every N) are passed on to the explorer, graph_agent/eval/run_agent.py.')
     p.add_argument('--arm', default='automask_strict_h2', choices=sorted(ARM_CONFIGS))

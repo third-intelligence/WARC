@@ -12,7 +12,7 @@ mv /tmp/arc3/public_games-dataset data/ARC-AGI-3/data/training
 cd data && sha256sum -c --quiet SHA256SUMS && echo OK      # 340 files
 ```
 
-`SHA256SUMS` lists the 340 recordings the released models were trained on. The trainer reads every recording in
+`SHA256SUMS` lists the 340 recordings the models of the paper were trained on. The trainer reads every recording in
 `data/ARC-AGI-3/data/training/<game>/`, so a file that is not listed there (a later version of the download may hold
 more) must be removed to train on the same data. The file names matter: for every game, the last recording by file
 name among those that reach the game's top level is the validation recording.

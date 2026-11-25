@@ -1,4 +1,4 @@
-"""Pretraining of the submission model on all 25 public games.
+"""Pretraining of the all-25 model on all 25 public games.
 
 train.py's recipe (the model builder replaced by warc_model.model.build_model) with the split of all25_split.py
 (fold 0 = all 25 games train, validation = one recording per game). The two patches touch different names of the

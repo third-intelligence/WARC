@@ -1,6 +1,6 @@
-"""The split of the submission model: all 25 public games are training games.
+"""The split of the all-25 model: all 25 public games are training games.
 
-The fold models hold out 8 or 9 games each. The submitted model must have seen every public game, so the trainer's
+The fold models hold out 8 or 9 games each. The all-25 model must have seen every public game, so the trainer's
 fold split is replaced from the outside by "fold 0 = no test games": the training games are all 25 and, as in the
 fold models, exactly one recording per game (the last by file name among the recordings that reach the game's top
 level) is the validation set that selects checkpoint_best. Nothing else changes. The data module decides the

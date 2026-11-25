@@ -1,5 +1,5 @@
-"""Play one ARC-AGI-3 game with the agent of the submission: the graph explorer with WARC updated after every
-transition. The world model, the explorer and the test-time training recipe are the ones of the Kaggle notebook.
+"""Play one ARC-AGI-3 game with the agent of the paper (WARC-Agent): the graph explorer with WARC updated after every
+transition.
 
     python -B agent/play.py --game tr87 --ckpt models/fold2/checkpoint_best.pt \\
         --environments-dir data/pub25/games --budget 1000 --seed 0
