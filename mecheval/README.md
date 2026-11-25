@@ -7,7 +7,9 @@ changes. A model replays a recording and predicts every next frame before it may
 prediction is scored on the cells that each firing mechanic changes, against the number of times the mechanic has fired
 before, its exposures.
 
-This directory holds the labels of the paper's 279 recordings. The annotator and the scorer will follow.
+This directory holds the labels of the paper's 279 recordings. The annotator and the scorer, with the measures of
+the current version of the paper, are on the [`paper-v2`](https://github.com/third-intelligence/WARC/tree/paper-v2) branch. Its README explains how to
+[evaluate your own world model](https://github.com/third-intelligence/WARC/blob/paper-v2/README.md#evaluating-your-world-model-on-mecheval).
 
 | File | Content |
 |---|---|
@@ -19,7 +21,7 @@ This directory holds the labels of the paper's 279 recordings. The annotator and
 
 ## Data
 
-The recordings belong to the ARC Prize Foundation and are not part of this repository. Download the public demo set of
+The recordings belong to the ARC Prize Foundation and are not part of this repository. Download the Public Demo dataset of
 the ARC-AGI-3 human dataset (https://arcprize.org/blog/arc-agi-3-human-dataset). `data/recordings.json` gives each
 recording's file name, its path once set up as in `../data/README.md`
 (`ARC-AGI-3/data/training/<game>/<id>.recording.jsonl`), and its SHA-256.
@@ -90,9 +92,9 @@ Every later line labels one action of the play.
 | `step` | The line of the play that holds this action and the frame after it. Line 0 is the first frame, so the first action is step 1. |
 | `level` | The level the action is taken in (1 or 2 in the paper). |
 | `action` | `[id, x, y]`, as in the play. |
-| `mechanics` | The mechanics that fire at this step, one entry each (below). |
-| `regions` | For each firing mechanic, the cells it is scored on. A mechanic that fires without a visible change has no region; it is not scored and still counts as an exposure. |
-| `interaction_regions` | The same for outcomes that are not mechanics, such as a blocked move. Their names carry a dot (`collision.wall`). The paper does not score them. May be `{}`. |
+| `mechanics` | The mechanics that fire at this step, one entry each (below). An entry whose name carries a dot (`collision.wall`, `invalid_action.no_button`) is an outcome that is not a mechanic, such as a blocked move; its cells, if any, are in `interaction_regions`. The paper does not score these entries. |
+| `regions` | Cells by name. A firing mechanic is scored on the region of its name. A mechanic that fires without a visible change has no region; it is not scored and still counts as an exposure. Some lines also hold regions of names that do not fire at that step; no mechanic is scored on them. |
+| `interaction_regions` | The cells of outcomes that are not mechanics: the dotted outcomes, and `movement`, the objects that moved. The paper does not score them. May be `{}`. |
 | `changed_outside` | The number of changed cells that lie in no region. Informative only. |
 | `initialization`, `exposure_origin` | How the play starts and where exposures are counted from. Informative only. |
 
@@ -129,7 +131,8 @@ line for them.
 
 - Labels version 1.0, the ones in the paper. They were read from the game programs: each game was replayed with a
   program that logs which mechanics fire and on which objects, and every replayed frame was checked against the
-  recording.
+  recording. The list of mechanics and the logging programs build on a concurrent study of the same games, credited
+  once it is published.
 - The labels cover the 279 human recordings of 20 games, at the game versions in `data/versions.json`, levels 1 and 2.
 - The mechanics were catalogued from the human recordings. At 37 of the 29,893 labelled actions, some changed cells lie
   outside every region (`changed_outside`).

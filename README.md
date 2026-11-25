@@ -1,11 +1,19 @@
 # How Many Exposures Does a World Model Need? Learning Unseen Game Mechanics at Test Time
 
-[![arXiv](https://img.shields.io/badge/arXiv-2611.12324-b31b1b.svg)](https://arxiv.org/abs/2611.12324)
+[![arXiv](https://img.shields.io/badge/arXiv-2611.12324v1-b31b1b.svg)](https://arxiv.org/abs/2611.12324v1)
 [![Model: Hugging Face](https://img.shields.io/badge/Model-%F0%9F%A4%97%20Hugging%20Face-yellow)](https://huggingface.co/third-intelligence/WARC)
 [![Kaggle: notebook](https://img.shields.io/badge/Kaggle-notebook-20BEFF?logo=kaggle)](https://www.kaggle.com/code/onodaku/warc-arc3-notebook-v2?scriptVersionId=362286067)
 [![License: CC0 1.0](https://img.shields.io/badge/License-CC0%201.0-lightgrey)](LICENSE)
 
 Ku Onoda, Haruto Kawano, Shota Takashiro, Kohei Hayashi
+
+> [!NOTE]
+> The code of the current version of the paper (arXiv v2), including the MechEval annotator and scorer, is on the
+> [`paper-v2`](https://github.com/third-intelligence/WARC/tree/paper-v2) branch, and its README explains how to
+> [evaluate your own world model on MechEval](https://github.com/third-intelligence/WARC/blob/paper-v2/README.md#evaluating-your-world-model-on-mecheval).
+> This branch (`main`) is the version of our ARC Prize 2026 paper-track entry (arXiv v1); the tag
+> [`arc-prize-2026-paper-track`](https://github.com/third-intelligence/WARC/tree/arc-prize-2026-paper-track) keeps the
+> repository as submitted.
 
 WARC (World model for ARC-AGI-3) is a 35M-parameter action-conditioned vision transformer. It
 predicts the next frame of a game, cell by cell, from the last three frames and
@@ -40,7 +48,6 @@ its pretraining and test-time training code, and the explorer of our ARC Prize
 
 - [x] WARC: the model, the pretraining and test-time training code, the explorer, and the weights
 - [x] MechEval: the labels of the paper's 279 recordings ([mecheval/README.md](mecheval/README.md))
-- [ ] MechEval: the annotator and the scorer
 
 ## Documentation
 
@@ -191,7 +198,7 @@ docs/                             reproducibility, third-party notices, figures
 
 ```bibtex
 @misc{onoda2026exposures,
-  title         = {How Many Exposures Does a World Model Need? Learning Unseen Game Mechanics at Test Time},
+  title         = {How Many Exposures Does a World Model Need? Learning Mechanics in Unseen Games at Test Time},
   author        = {Ku Onoda and Haruto Kawano and Shota Takashiro and Kohei Hayashi},
   year          = {2026},
   eprint        = {2611.12324},
