@@ -2,6 +2,7 @@
 
 [![arXiv](https://img.shields.io/badge/arXiv-2611.12324-b31b1b.svg)](https://arxiv.org/abs/2611.12324)
 [![Model: Hugging Face](https://img.shields.io/badge/Model-%F0%9F%A4%97%20Hugging%20Face-yellow)](https://huggingface.co/third-intelligence/WARC)
+[![Dataset: Hugging Face](https://img.shields.io/badge/Dataset-%F0%9F%A4%97%20MechEval-yellow)](https://huggingface.co/datasets/third-intelligence/MechEval)
 [![License: CC0 1.0](https://img.shields.io/badge/License-CC0%201.0-lightgrey)](LICENSE)
 
 Ku Onoda, Haruto Kawano, Shota Takashiro, Kohei Hayashi
